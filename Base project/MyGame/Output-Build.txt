@@ -1,0 +1,8 @@
+﻿Build started...
+1>------ Build started: Project: MyGame, Configuration: Debug Win32 ------
+1>GameScene.cpp
+1>shaggy.cpp
+1>Generating Code...
+1>MyGame.vcxproj -> C:\Users\kaigr\source\repos\WilliamsGameEngineVS2019\Base project\MyGame\Debug\MyGame.exe
+1>        1 file(s) copied.
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
