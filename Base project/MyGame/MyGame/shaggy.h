@@ -1,5 +1,6 @@
 #pragma once
 #include "Engine/GameEngine.h"
+#include "laser.h"
 class Ship : public GameObject
 {
 public:
@@ -8,5 +9,6 @@ public:
 	void update(sf::Time& elapsed);
 private:
 	sf::Sprite sprite_;
+	int fireTimer_ = 0;
 };
 typedef std::shared_ptr<Ship> ShipPtr;
