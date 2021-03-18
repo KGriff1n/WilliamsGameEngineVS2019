@@ -1,8 +1,13 @@
 #include "Shaggy.h"
+#include <time.h>
+#include <stdlib.h>
 #include <memory>
+#include "meteor.h"
 #include "laser.h"
-const float SPEED = 1.0f;
-const int FIRE_DELAY = 100;
+
+const float SPEED = .5f;
+const int FIRE_DELAY = 250;
+
 Ship::Ship()
 {
 	sprite_.setTexture(GAME.getTexture("Resources/ship.png"));
@@ -17,6 +22,7 @@ void Ship::update(sf::Time& elapsed) {
 	float x = pos.x;
 	float y = pos.y;
 	int  msElapsed = elapsed.asMilliseconds();
+	
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) y -= SPEED * msElapsed;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) y += SPEED * msElapsed;
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) x -= SPEED * msElapsed;
@@ -42,8 +48,16 @@ void Ship::update(sf::Time& elapsed) {
 		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
 		LaserPtr laser2 = std::make_shared<Laser>(sf::Vector2f(laserX2, laserY2));
 		LaserPtr laser3 = std::make_shared<Laser>(sf::Vector2f(laserX2, laserY3));
+		
 		GAME.getCurrentScene().addGameObject(laser);
 		GAME.getCurrentScene().addGameObject(laser2);
 		GAME.getCurrentScene().addGameObject(laser3);
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::M) && fireTimer_ <= 0)
+	{
+		fireTimer_ = FIRE_DELAY;
+		int meteorY = 0 + (rand() % 600);
+		MeteorPtr meteor = std::make_shared<Meteor>(sf::Vector2f(800, meteorY));
+		GAME.getCurrentScene().addGameObject(meteor);
 	}
 }

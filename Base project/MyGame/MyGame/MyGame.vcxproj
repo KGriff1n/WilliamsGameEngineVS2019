@@ -88,6 +88,8 @@
     <ClCompile Include="Engine\Scene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="laser.cpp" />
+    <ClCompile Include="meteor.cpp" />
+    <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="shaggy.cpp" />
   </ItemGroup>
@@ -99,14 +101,18 @@
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="laser.h" />
+    <ClInclude Include="meteor.h" />
+    <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="shaggy.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\..\..\Downloads\squiddy.png" />
     <Image Include="..\..\..\Art\ship.png" />
     <Image Include="Resources\laser.png" />
+    <Image Include="Resources\meteor.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
