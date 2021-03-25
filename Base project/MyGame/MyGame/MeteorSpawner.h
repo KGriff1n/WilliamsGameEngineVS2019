@@ -4,7 +4,7 @@
 
 class MeteorSpawner : public GameObject
 {
-public: 
+public:  
 	void update(sf::Time& elapsed);
 private:
 	int timer_ = 0;

@@ -92,6 +92,8 @@
     <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="shaggy.cpp" />
+    <ClCompile Include="Star.cpp" />
+    <ClCompile Include="StarSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h" />
@@ -104,6 +106,7 @@
     <ClInclude Include="meteor.h" />
     <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="shaggy.h" />
+    <ClInclude Include="StarBackground.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\README.md" />

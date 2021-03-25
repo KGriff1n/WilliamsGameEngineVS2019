@@ -19,6 +19,8 @@
     <ClCompile Include="laser.cpp" />
     <ClCompile Include="meteor.cpp" />
     <ClCompile Include="MeteorSpawner.cpp" />
+    <ClCompile Include="Star.cpp" />
+    <ClCompile Include="StarSpawner.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -41,6 +43,7 @@
     <ClInclude Include="laser.h" />
     <ClInclude Include="meteor.h" />
     <ClInclude Include="MeteorSpawner.h" />
+    <ClInclude Include="StarBackground.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
