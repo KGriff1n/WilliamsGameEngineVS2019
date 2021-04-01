@@ -5,13 +5,13 @@
 #include "meteor.h"
 #include "laser.h"
 
-const float SPEED = .5f;
-const int FIRE_DELAY = 250;
+const float SPEED = 1.0f;
+const int FIRE_DELAY = 0;
 
 Ship::Ship()
 {
 	sprite_.setTexture(GAME.getTexture("Resources/ship.png"));
-	sprite_.setPosition(sf::Vector2f(100, 100));
+	sprite_.setPosition(sf::Vector2f(100, 100));  
 }
 void Ship::draw()
 {
@@ -43,8 +43,8 @@ void Ship::update(sf::Time& elapsed) {
 		float laserX = x + bounds.width;
 		float laserX2 = x + bounds.width - 50;
 		float laserY = y + (bounds.height / 2.0f);
-		float laserY2 = y + (bounds.height / 2.0f) - 65;
-		float laserY3 = y + (bounds.height / 2.0f) + 65;
+		float laserY2 = y + (bounds.height / 2.0f) - 50;
+		float laserY3 = y + (bounds.height / 2.0f) + 50;
 		LaserPtr laser = std::make_shared<Laser>(sf::Vector2f(laserX, laserY));
 		LaserPtr laser2 = std::make_shared<Laser>(sf::Vector2f(laserX2, laserY2));
 		LaserPtr laser3 = std::make_shared<Laser>(sf::Vector2f(laserX2, laserY3));
