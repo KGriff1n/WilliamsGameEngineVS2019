@@ -8,6 +8,7 @@ Explosion::Explosion(sf::Vector2f pos)
 	SetUpExplosionAnimation();
 	playAnimation("explosion", AnimationMode::OnceForwards);
 	boom_.setBuffer(GAME.getSoundBuffer("Resources/boom.wav"));
+	boom_.setVolume(100);
 	boom_.play();
 
 }
