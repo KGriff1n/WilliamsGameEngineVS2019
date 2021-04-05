@@ -21,7 +21,6 @@
     <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="Star.cpp" />
     <ClCompile Include="StarSpawner.cpp" />
-    <ClCompile Include="AnimatedSprite.cpp" />
     <ClCompile Include="explosion.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +45,6 @@
     <ClInclude Include="meteor.h" />
     <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="StarBackground.h" />
-    <ClInclude Include="AnimatedSprite.h" />
     <ClInclude Include="explosion.h" />
   </ItemGroup>
   <ItemGroup>

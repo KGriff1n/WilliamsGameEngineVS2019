@@ -7,6 +7,8 @@ Laser::Laser(sf::Vector2f pos)
 	sprite_.setTexture(GAME.getTexture("Resources/laser.png"));
 	sprite_.setPosition(pos);
 	assignTag("laser");
+	laser_.setBuffer(GAME.getSoundBuffer("Resources/laser.wav"));
+	laser_.play();
 }
 void Laser::draw()
 {

@@ -10,6 +10,6 @@ public:
 	void handleCollision(GameObject& otherGameObject);
 private:
 	sf::Sprite sprite_;
-
+	
 };
 typedef std::shared_ptr<Meteor> MeteorPtr;

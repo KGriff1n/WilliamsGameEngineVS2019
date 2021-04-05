@@ -6,7 +6,7 @@
 #include "laser.h"
 
 const float SPEED = 1.0f;
-const int FIRE_DELAY = 0;
+const int FIRE_DELAY = 250;
 
 Ship::Ship()
 {
@@ -53,11 +53,11 @@ void Ship::update(sf::Time& elapsed) {
 		GAME.getCurrentScene().addGameObject(laser2);
 		GAME.getCurrentScene().addGameObject(laser3);
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::M) && fireTimer_ <= 0)
+	/*if (sf::Keyboard::isKeyPressed(sf::Keyboard::M) && fireTimer_ <= 0)
 	{
 		fireTimer_ = FIRE_DELAY;
 		int meteorY = 0 + (rand() % 600);
 		MeteorPtr meteor = std::make_shared<Meteor>(sf::Vector2f(800, meteorY));
 		GAME.getCurrentScene().addGameObject(meteor);
-	}
+	}*/
 }
