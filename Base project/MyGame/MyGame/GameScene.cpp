@@ -10,12 +10,13 @@ GameScene::GameScene()
 	addGameObject(meteorSpawner);
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
 	addGameObject(score);
-	int GameScene::getScore()
+	
+}
+int GameScene::getScore()
 	{
 		return score_;
 	}
-	void GameScene::increaseScore()
+void GameScene::increaseScore()
 	{
 		++score_;
 	}
-}
