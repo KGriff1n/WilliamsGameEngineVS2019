@@ -1,6 +1,7 @@
 
 #include "meteor.h"
 #include "Explosion.h"
+
 const float SPEED = .5f;
 
 Meteor::Meteor(sf::Vector2f pos)

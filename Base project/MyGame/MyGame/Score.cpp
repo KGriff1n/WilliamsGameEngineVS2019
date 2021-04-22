@@ -1,14 +1,16 @@
 #include"Score.h"
 #include "GameScene.h"
 #include <sstream>
+#pragma warning(suppress : 4996)
 Score::Score(sf::Vector2f pos)
 {
 	text_.setFont(GAME.getFont("Resources/Courneuf-Regular.ttf"));
 	text_.setPosition(pos);
 	text_.setCharacterSize(24);
-	text_.setColor(sf::Color::White);
+	//text_.setColor(sf::Color::White);
 	assignTag("score");
 }
+
 void Score::draw()
 {
 	GAME.getRenderWindow().draw(text_);

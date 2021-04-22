@@ -1,6 +1,7 @@
 #include "GameScene.h"
 #include "shaggy.h"
 #include "MeteorSpawner.h"
+
 #include "Score.h"
 GameScene::GameScene() 
 {
@@ -12,7 +13,7 @@ GameScene::GameScene()
 	addGameObject(score);
 	
 }
-int GameScene::getScore()
+int GameScene::getScore() 
 	{
 		return score_;
 	}

@@ -10,7 +10,7 @@ class GameScene : public Scene
 
   int getScore();
   void increaseScore();
- private:
+private:
 	int score_ = 0;
 };
 
