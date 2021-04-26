@@ -21,6 +21,7 @@
     <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="explosion.cpp" />
     <ClCompile Include="Score.cpp" />
+    <ClCompile Include="GameOverMessage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -45,6 +46,7 @@
     <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="explosion.h" />
     <ClInclude Include="Score.h" />
+    <ClInclude Include="GameOverMessage.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
