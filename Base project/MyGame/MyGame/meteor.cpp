@@ -1,7 +1,7 @@
-
+#include "GameScene.h"
 #include "meteor.h"
 #include "Explosion.h"
-
+#include "Score.h"
 const float SPEED = .5f;
 
 Meteor::Meteor(sf::Vector2f pos)
@@ -43,7 +43,8 @@ void Meteor::handleCollision(GameObject& otherGameObject)
 		ExplosionPtr explosion = std::make_shared<Explosion>(pos);
 		GAME.getCurrentScene().addGameObject(explosion);
 		otherGameObject.makeDead();
-		
+		int getScore();
+		void increaseScore();
 	}
 	makeDead();
 }
