@@ -96,6 +96,7 @@
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="ScrollingBackground.cpp" />
+    <ClCompile Include="ScrollSpawn.cpp" />
     <ClCompile Include="shaggy.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -113,6 +114,7 @@
     <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="ScrollingBackground.h" />
+    <ClInclude Include="ScrollSpawn.h" />
     <ClInclude Include="shaggy.h" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\..\Downloads\squiddy.png" />
+    <Image Include="..\..\..\Art\background.png" />
     <Image Include="..\..\..\Art\ship.png" />
     <Image Include="Resources\explosion-spritesheet.png" />
     <Image Include="Resources\laser.png" />

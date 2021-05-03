@@ -3,6 +3,7 @@
 #include "MeteorSpawner.h"
 #include "GameOverScene.h"
 #include "Score.h"
+#include "ScrollSpawn.h"
 GameScene::GameScene() 
 {
 	ShipPtr ship = std::make_shared<Ship>();
@@ -11,7 +12,8 @@ GameScene::GameScene()
 	addGameObject(meteorSpawner);
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));
 	addGameObject(score);
-	
+	ScrollSpawnerPtr backgroundspawn = std::make_shared<ScrollSpawner>();
+	addGameObject(backgroundspawn);
 }
 int GameScene::getScore() 
 	{

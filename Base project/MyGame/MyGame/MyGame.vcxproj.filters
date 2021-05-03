@@ -24,6 +24,7 @@
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="ScrollingBackground.cpp" />
+    <ClCompile Include="ScrollSpawn.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -51,6 +52,7 @@
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="ScrollingBackground.h" />
+    <ClInclude Include="ScrollSpawn.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">
@@ -79,6 +81,9 @@
       <Filter>Resources</Filter>
     </Image>
     <Image Include="Resources\explosion-spritesheet.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="..\..\..\Art\background.png">
       <Filter>Resources</Filter>
     </Image>
   </ItemGroup>
