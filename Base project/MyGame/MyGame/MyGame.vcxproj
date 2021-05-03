@@ -88,6 +88,7 @@
     <ClCompile Include="Engine\Scene.cpp" />
     <ClCompile Include="explosion.cpp" />
     <ClCompile Include="GameOverMessage.cpp" />
+    <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="laser.cpp" />
     <ClCompile Include="meteor.cpp" />
@@ -104,6 +105,7 @@
     <ClInclude Include="Engine\Scene.h" />
     <ClInclude Include="explosion.h" />
     <ClInclude Include="GameOverMessage.h" />
+    <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="laser.h" />
     <ClInclude Include="meteor.h" />

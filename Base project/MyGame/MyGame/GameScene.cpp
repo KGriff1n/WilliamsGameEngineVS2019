@@ -1,7 +1,7 @@
 #include "GameScene.h"
 #include "shaggy.h"
 #include "MeteorSpawner.h"
-
+#include "GameOverScene.h"
 #include "Score.h"
 GameScene::GameScene() 
 {
@@ -21,3 +21,19 @@ void GameScene::increaseScore()
 	{
 		++score_;
 	}
+int GameScene::getLives()
+{
+	return lives_;
+}
+void GameScene::decreaseLives()
+{
+	
+	  lives_= lives_ - 1;
+	if (lives_ == 0)
+	{
+		
+		GameOverScenePtr gameOverScene = std::make_shared<GameOverScene>(score_);
+		GAME.setScene(gameOverScene);
+	}
+	
+}
