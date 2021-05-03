@@ -95,6 +95,7 @@
     <ClCompile Include="MeteorSpawner.cpp" />
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="Score.cpp" />
+    <ClCompile Include="ScrollingBackground.cpp" />
     <ClCompile Include="shaggy.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +112,7 @@
     <ClInclude Include="meteor.h" />
     <ClInclude Include="MeteorSpawner.h" />
     <ClInclude Include="Score.h" />
+    <ClInclude Include="ScrollingBackground.h" />
     <ClInclude Include="shaggy.h" />
   </ItemGroup>
   <ItemGroup>
