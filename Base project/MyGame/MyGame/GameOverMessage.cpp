@@ -1,6 +1,8 @@
 #include "GameOverMessage.h"
 #include "GameScene.h"
+#include "Score.h"
 #include <sstream>
+
 
 GameOverMessage::GameOverMessage(int score)
 {

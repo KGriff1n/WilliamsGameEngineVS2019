@@ -1,5 +1,4 @@
 #pragma once
-
 #include "Engine/GameEngine.h"
 
 class GameScene : public Scene 
@@ -10,7 +9,11 @@ class GameScene : public Scene
 
   int getScore();
   void increaseScore();
+  int getLives();
+  void decreaseLives();
+  
 private:
+	int lives_ = 3;
 	int score_ = 0;
 };
 
