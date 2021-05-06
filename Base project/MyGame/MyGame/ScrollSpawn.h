@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include "Engine/GameEngine.h"
 #include "ScrollingBackground.h"
 
@@ -10,3 +10,4 @@ private:
 	int timer_ = 0;
 };
 typedef std::shared_ptr<ScrollSpawner> ScrollSpawnerPtr;
+*/

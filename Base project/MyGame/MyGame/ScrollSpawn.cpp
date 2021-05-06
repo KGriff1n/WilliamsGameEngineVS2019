@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include "ScrollSpawn.h"
 const int SPAWN_DELAY = 1500;
 void ScrollSpawner::update(sf::Time& elapsed)
@@ -16,3 +16,4 @@ void ScrollSpawner::update(sf::Time& elapsed)
 
 	}
 }
+*/
