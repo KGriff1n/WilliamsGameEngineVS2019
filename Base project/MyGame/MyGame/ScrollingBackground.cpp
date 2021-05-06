@@ -14,7 +14,7 @@ Background::Background(sf::Vector2f pos)
 	assignTag("Background");
 
 }
-Background::Background1(sf::Vector2f pos1)
+void Background::Background1(sf::Vector2f pos1)
 {
 	sprite2_.setTexture(GAME.getTexture("Resources/background.png"));
 	sprite2_.setPosition(pos1);
