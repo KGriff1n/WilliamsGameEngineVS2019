@@ -1,6 +1,6 @@
 #pragma once
 #include "MeteorSpawner.h"
-const int SPAWN_DELAY = 500;
+const int SPAWN_DELAY = 1000;
 void MeteorSpawner::update(sf::Time& elapsed)
 {
 	int msElapsed = elapsed.asMilliseconds();
