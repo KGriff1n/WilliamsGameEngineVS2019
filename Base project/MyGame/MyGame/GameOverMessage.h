@@ -7,6 +7,7 @@ public:
 	GameOverMessage(int score);
 	void draw();
 	void update(sf::Time& elapsed);
+	
 private:
 	sf::Text text_;
 };
