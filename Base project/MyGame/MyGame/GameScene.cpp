@@ -1,13 +1,16 @@
 #include "GameScene.h"
 #include "shaggy.h"
+
+#include "Engine/GameEngine.h"
+
 #include "MeteorSpawner.h"
 #include "GameOverScene.h"
 #include "Score.h"
 #include "ScrollingBackground.h"
 GameScene::GameScene() 
 {
-	BackgroundPtr backgroundspawn = std::make_shared<Background>();
-	addGameObject(backgroundspawn);
+	//BackgroundPtr background = std::make_shared<Background>(sf::Vector2f(0.0,0.0));
+	//addGameObject(background);
 	MeteorSpawnerPtr meteorSpawner = std::make_shared<MeteorSpawner>();
 	addGameObject(meteorSpawner);
 	ScorePtr score = std::make_shared<Score>(sf::Vector2f(10.0f, 10.0f));

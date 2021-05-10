@@ -5,7 +5,8 @@ class Background : public GameObject
 {
 public:
 	Background(sf::Vector2f pos);
-	Background1(sf::Vector2f pos1);
+
+	void Background1(sf::Vector2f pos1);
 	void draw();
 	void update(sf::Time& elapsed);
 	
